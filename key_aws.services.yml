@@ -1,0 +1,4 @@
+services:
+  key_aws.repository:
+    class: Drupal\key_aws\AWSKeyRepository
+    arguments: [ '@key.repository' ]

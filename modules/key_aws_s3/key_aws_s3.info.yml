@@ -1,0 +1,8 @@
+name: 'Key AWS S3'
+type: module
+description: 'Provides custom key type and key input for Amazon S3 authentication.'
+core_version_requirement: '>=8.9 <11 || ^11'
+package: Security
+configure: entity.key.collection
+dependencies:
+    - 'key_aws:key_aws'

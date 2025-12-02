@@ -1,0 +1,49 @@
+diff --git a/composer.json b/composer.json
+index 71a6acd..5c183c2 100644
+--- a/composer.json
++++ b/composer.json
+@@ -19,8 +19,8 @@
+         }
+     ],
+     "require": {
+-        "drupal/core": "^8.9 || ^9 || ^10",
+-        "drupal/key": "^1.16"
++        "drupal/key": "^1.16",
++        "drupal/core": "^8.9 || ^9 || ^10 || ^11"
+     },
+     "support": {
+         "issues": "https://www.drupal.org/project/issues/key_aws",
+diff --git a/key_aws.info.yml b/key_aws.info.yml
+index 34685f6..19e587b 100644
+--- a/key_aws.info.yml
++++ b/key_aws.info.yml
+@@ -1,8 +1,8 @@
+-name: Key AWS
++name: 'Key AWS'
+ type: module
+-description: Provides custom key provider for AWS authentication.
+-core_version_requirement: ">=8.9 <11"
++description: 'Provides custom key provider for AWS authentication.'
++core_version_requirement: '>=8.9 <11 || ^11'
+ package: Security
+ configure: entity.key.collection
+ dependencies:
+-  - key:key
++    - 'key:key'
+diff --git a/modules/key_aws_s3/key_aws_s3.info.yml b/modules/key_aws_s3/key_aws_s3.info.yml
+index bc41360..3e55b92 100644
+--- a/modules/key_aws_s3/key_aws_s3.info.yml
++++ b/modules/key_aws_s3/key_aws_s3.info.yml
+@@ -1,8 +1,8 @@
+-name: Key AWS S3
++name: 'Key AWS S3'
+ type: module
+-description: Provides custom key type and key input for Amazon S3 authentication.
+-core_version_requirement: ">=8.9 <11"
++description: 'Provides custom key type and key input for Amazon S3 authentication.'
++core_version_requirement: '>=8.9 <11 || ^11'
+ package: Security
+ configure: entity.key.collection
+ dependencies:
+-  - key_aws:key_aws
++    - 'key_aws:key_aws'

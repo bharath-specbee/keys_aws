@@ -1,0 +1,8 @@
+name: 'Key AWS'
+type: module
+description: 'Provides custom key provider for AWS authentication.'
+core_version_requirement: '>=8.9 <11 || ^11'
+package: Security
+configure: entity.key.collection
+dependencies:
+    - 'key:key'

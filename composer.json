@@ -1,0 +1,29 @@
+{
+    "name": "drupal/key_aws",
+    "description": "Provides key provider for AWS authentication.",
+    "type": "drupal-module",
+    "keywords": [
+        "Drupal",
+        "Authentication",
+        "Amazon",
+        "AWS"
+    ],
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "homepage": "https://drupal.org/project/key_aws",
+    "authors": [
+        {
+            "name": "George Anderson (geoanders)",
+            "homepage": "https://www.drupal.org/u/geoanders",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/key": "^1.16",
+        "drupal/core": "^8.9 || ^9 || ^10 || ^11"
+    },
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/key_aws",
+        "source": "https://git.drupalcode.org/project/key_aws"
+    }
+}
