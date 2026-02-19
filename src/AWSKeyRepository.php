@@ -61,7 +61,7 @@ class AWSKeyRepository {
         $credentials = $this->key->getKeyValues();
       }
     }
-    return $credentials;
+    return $credentials ?? [];
   }
 
   /**
